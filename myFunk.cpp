@@ -8,7 +8,8 @@
 unsigned int function(const std::string str, const unsigned int forbidden_length)
 {
     unsigned int len = str.length();
-    if (len == forbidden_length) throw "Вы ввели слово запретной длины! ";
+    //if (len == forbidden_length) throw "Вы ввели слово запретной длины! ";
+    if (len == forbidden_length) throw std::runtime_error("Вы ввели слово запретной длины! ");
 	return len;
 }
 
